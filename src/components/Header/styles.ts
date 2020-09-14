@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 interface ContainerProps {
   size?: 'small' | 'large';
@@ -22,6 +23,7 @@ export const Container = styled.div<ContainerProps>`
         text-decoration: none;
         font-size: 16px;
         transition: opacity 0.2s;
+        border-bottom: 1px solid #ff872c;
 
         & + a {
           margin-left: 32px;
@@ -34,3 +36,4 @@ export const Container = styled.div<ContainerProps>`
     }
   }
 `;
+
